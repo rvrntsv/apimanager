@@ -13,9 +13,9 @@ class Reddit extends require('./Service') {
         return new snoowrap({
             userAgent: 'Reddit app',
             clientId: clientId,
-            clientSecret: clientId,
-            username: "satonysatony",
-            password: "Tonysoprano02"
+            clientSecret: clientSecret,
+            refreshToken: userSessionData.refreshToken,
+            accessToken: userSessionData.accessToken,
         });
 
     }
